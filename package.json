@@ -4,6 +4,10 @@
     "description": "zlang support",
     "version": "0.0.1",
     "publisher": "luoheng23",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/luoheng23/zlang-vscode"
+    },
     "engines": {
         "vscode": "^1.48.0"
     },
