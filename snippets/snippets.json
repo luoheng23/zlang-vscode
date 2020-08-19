@@ -1,0 +1,252 @@
+{
+	"type/list": {
+		"prefix": "list",
+		"body": "list<${1:Type}>\n",
+		"description": "",
+		"scope": "source.z"
+	},
+	"type/dict": {
+		"prefix": "dict",
+		"body": "dict<${1:KeyType}, ${2:ValueType}>\n",
+		"description": "",
+		"scope": "source.z"
+	},
+	"elif": {
+		"prefix": "elif",
+		"body": "else if ${1:condition} {\n\t$2\n}\n",
+		"description": "else if ...",
+		"scope": "source.z"
+	},
+	"else": {
+		"prefix": "else",
+		"body": "else {\n\t$2\n}\n",
+		"description": "else ...",
+		"scope": "source.z"
+	},
+	"type/enum": {
+		"prefix": "enum",
+		"body": "enum ${1:name} {\n\t$2\n}\n",
+		"description": "",
+		"scope": "source.z"
+	},
+	"type/extend": {
+		"prefix": "extend",
+		"body": "extend ${1:name} {\n\t$2\n}\n",
+		"description": "extend ...",
+		"scope": "source.z"
+	},
+	"type/fn": {
+		"prefix": "fn",
+		"body": "fn ${1:name}(${2:arguments}) -> ${3:ReturnType} {\n\t$4\n}\n",
+		"description": "",
+		"scope": "source.z"
+	},
+	"ifelse": {
+		"prefix": "ifelse",
+		"body": "if ${1:condition} {\n\t$2\n} else {\n\t$3\n}\n",
+		"description": "if ... else ...",
+		"scope": "source.z"
+	},
+	"if": {
+		"prefix": "if",
+		"body": "if ${1:condition} {\n\t$2\n}\n",
+		"description": "if ...",
+		"scope": "source.z"
+	},
+	"init": {
+		"prefix": "init",
+		"body": "init(${1:parameters}) {\n\t$2\n}\n",
+		"description": "init(...) {...}",
+		"scope": "source.z"
+	},
+	"type/interface": {
+		"prefix": "interface",
+		"body": "interface ${1:name} {\n\t$2\n}\n",
+		"description": "interface ...",
+		"scope": "source.z"
+	},
+	"type/struct": {
+		"prefix": "struct",
+		"body": "struct ${1:name} {\n\t$2\n}\n",
+		"description": "struct ...",
+		"scope": "source.z"
+	},
+	"subscript": {
+		"prefix": "subscript",
+		"body": "subscript(${1:parameters}) -> ${2:ReturnType} {\n\t$3\n}\n",
+		"description": "subscript ...",
+		"scope": "source.z"
+	},
+	"switch": {
+		"prefix": "switch",
+		"body": "switch ${1:control expression} {\ncase ${2:pattern}:\n\t$3\n}\n",
+		"description": "switch ...",
+		"scope": "source.z"
+	},
+	"type": {
+		"prefix": "type",
+		"body": "type ${1:name} = ${2:Type}\n",
+		"description": "type ... = ...",
+		"scope": "source.z"
+	},
+	"for": {
+		"prefix": "for",
+		"body": "for ${1:value} in ${2: list} {\n\t$3\n}\n",
+		"description": "for . in ...",
+		"scope": "source.z"
+	},
+
+	"for/inf": {
+		"prefix": "for/inf",
+		"body": "for {\n\t$1\n}\n",
+		"description": "for {} ... infinity loop",
+		"scope": "source.z"
+	},
+	"for/condition": {
+		"prefix": "for/condition",
+		"body": "for ${1:condition} {\n\t$2\n}\n",
+		"description": "for condition {}",
+		"scope": "source.z"
+	},
+	"with": {
+        "prefix": "with",
+        "body": "with ${1:expression} as ${2:target} {\n\t$3\n}\n",
+        "description": "Code snippet for a with statement"
+	},
+	"var/const": {
+        "prefix": "var",
+        "body": "var",
+        "description": "var"
+	},
+	"const/var": {
+        "prefix": "const",
+        "body": "const",
+        "description": "const"
+	},
+	"in": {
+        "prefix": "in",
+        "body": "in",
+        "description": "in"
+	},
+	"break": {
+        "prefix": "break",
+        "body": "break",
+        "description": "break"
+	},
+	"continue": {
+        "prefix": "continue",
+        "body": "continue",
+        "description": "continue"
+	},
+	"fallthrough": {
+        "prefix": "fallthrough",
+        "body": "fallthrough",
+        "description": "fallthrough"
+	},
+	"go": {
+        "prefix": "go",
+        "body": "go ${1:expression}",
+        "description": "go"
+	},
+	"case": {
+		"prefix": "case",
+        "body": "case ${1:expression}:",
+        "description": "case"
+	},
+	"default": {
+		"prefix": "default",
+        "body": "default: \n\t$1\n",
+        "description": "default"
+	},
+	"defer": {
+		"prefix": "defer",
+		"body": "defer ${1:expression}",
+		"description": "defer"
+	},
+	"return": {
+		"prefix": "return",
+		"body": "return ${1:true}",
+		"description": "return"
+	},
+	"type/int": {
+		"prefix": "int",
+		"body": "int",
+		"description": "int"
+	},
+	"type/int8": {
+		"prefix": "int8",
+		"body": "int8",
+		"description": "int8"
+	},
+	"type/int16": {
+		"prefix": "int16",
+		"body": "int16",
+		"description": "int16"
+	},
+	"type/int32": {
+		"prefix": "int32",
+		"body": "int32",
+		"description": "int32"
+	},
+	"type/int64": {
+		"prefix": "int64",
+		"body": "int64",
+		"description": "int64"
+	},
+	"type/uint": {
+		"prefix": "uint",
+		"body": "uint",
+		"description": "uint"
+	},
+	"type/uint8": {
+		"prefix": "uint8",
+		"body": "uint8",
+		"description": "uint8"
+	},
+	"type/uint16": {
+		"prefix": "uint16",
+		"body": "uint16",
+		"description": "uint16"
+	},
+	"type/uint32": {
+		"prefix": "uint32",
+		"body": "uint32",
+		"description": "uint32"
+	},
+	"type/uint64": {
+		"prefix": "uint64",
+		"body": "uint64",
+		"description": "uint64"
+	},
+	"type/float": {
+		"prefix": "float",
+		"body": "float",
+		"description": "float"
+	},
+	"type/double": {
+		"prefix": "double",
+		"body": "double",
+		"description": "double"
+	},
+	"type/char": {
+		"prefix": "char",
+		"body": "char",
+		"description": "char"
+	},
+	"type/string": {
+		"prefix": "string",
+		"body": "string",
+		"description": "string"
+	},
+	"type/self": {
+		"prefix": "self",
+		"body": "self",
+		"description": "self"
+	},
+	"type/super": {
+		"prefix": "super",
+		"body": "super",
+		"description": "super"
+	}
+
+}

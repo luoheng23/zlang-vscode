@@ -1,0 +1,41 @@
+{
+    "name": "zlang",
+    "displayName": "zlang",
+    "description": "zlang support",
+    "version": "0.0.1",
+    "publisher": "luoheng23",
+    "engines": {
+        "vscode": "^1.48.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "z",
+                "aliases": [
+                    "z",
+                    "z"
+                ],
+                "extensions": [
+                    ".z"
+                ],
+                "configuration": "./z.configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "z",
+                "scopeName": "source.z",
+                "path": "./syntaxes/z.tmLanguage.json"
+            }
+        ],
+        "snippets": [
+            {
+                "language": "z",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    }
+}
